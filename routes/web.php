@@ -7,8 +7,9 @@ use App\Http\Controllers\DokterController;
 use App\Http\Controllers\BookingController; // <-- Tambahkan ini
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('booking.index');
 });
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
